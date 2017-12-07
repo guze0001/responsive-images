@@ -15,7 +15,7 @@ ul {
 li {
     float: left;
     margin-top: 2.5%;
-
+    width: 100%;
 }
 
 .scaleContainer {
