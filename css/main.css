@@ -6,8 +6,19 @@ body {
     font-size: 16px;
     box-sizing: border-box;
     line-height: 1.5;
+    background-image: url('/img/bg/c25.jpg');
+/*  background image source: DreamCodes v1.25
+http://www.dreamtemplate.com/dreamcodes/documentation/background_images.html
+    */
 }
-
+h1{
+    text-shadow: 2px 2px rgba(40, 40, 40, 0.3);
+    color: #444436;
+    padding: 2% 10%;
+    text-align: center;
+    border-bottom: #444436 solid;
+    
+}
 ul {
     list-style: none;
 }
@@ -15,7 +26,7 @@ ul {
 li {
     float: left;
     margin-top: 2.5%;
-    width: 100%;
+    width: 90%;
 }
 
 .scaleContainer {
@@ -24,12 +35,13 @@ li {
     color: white;
 }
 
+
 .bottom-left {
     position: absolute;
     bottom: 3%;
     left: 5%;
     background-color: rgba(0, 0, 0, 0.6);
-    transition: transform 0.5s;
+    transition: transform 0.8s;
     width: 90%;
     text-align: center;
 }
@@ -42,40 +54,39 @@ li {
     max-width: 90%;
     transition: transform 0.5s ease-in-out;
     box-shadow: 3px 3px 5px #001122;
+    cursor: zoom-out;
 }
 
 .scaleContainer:hover img,
 .scaleContainer:hover .bottom-left {
-    /*   transform: rotate(90deg); */
     transform: scale(1.2);
-    /*    transform: skewX(20deg); */
-    /*    transform: translate(50px,50px); */
-    /*    transform: matrix(); */
 }
- .current-resolution:after{
-        content: "600-";
-    }
+
+.current-resolution,.current-resolution:after {
+    font-size: 0.5rem;
+    content: "600px-";
+}
 
 @media screen and (min-width: 600px) {
     /* two columns */
     li {
-        width: 50%;
+        width: 47%;
     }
-    body{
+    body {
         font-size: 0.8rem;
     }
-    .current-resolution:after{
-        content: "600+";
+    .current-resolution:after {
+        content: "600px+";
     }
-    
+
 }
 
 @media screen and (min-width: 1200px) {
     /* four columns */
     li {
-        width: 25%;
+        width: 24%;
     }
-     .current-resolution:after{
-        content: "1200+";
+    .current-resolution:after {
+        content: "1200px+";
     }
 }
