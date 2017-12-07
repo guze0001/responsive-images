@@ -52,6 +52,9 @@ li {
     /*    transform: translate(50px,50px); */
     /*    transform: matrix(); */
 }
+ .current-resolution:after{
+        content: "600-";
+    }
 
 @media screen and (min-width: 600px) {
     /* two columns */
@@ -61,6 +64,9 @@ li {
     body{
         font-size: 0.8rem;
     }
+    .current-resolution:after{
+        content: "600+";
+    }
     
 }
 
@@ -68,5 +74,8 @@ li {
     /* four columns */
     li {
         width: 25%;
+    }
+     .current-resolution:after{
+        content: "1200+";
     }
 }
